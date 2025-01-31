@@ -10,6 +10,8 @@ console.log(print_vowels_count());
 // printing exercise 3 : 
 console.log(isAPalindrome(chaine));
 
+
+// ex 1 : reverse a string
 function reverse(str) {
     let str_inv ="";
     for (let i = str.length-1; i >= 0; --i) {
@@ -18,7 +20,7 @@ function reverse(str) {
     return str_inv;
 }
 
-//this function returns how many vowels are in chaine 
+// ex 2 : returns how many vowels are in chaine 
 function comp_voy(str) {
     let compteur = 0;
     let voyelles = ['a', 'e', 'i', 'o', 'u', 'y'];
@@ -43,7 +45,7 @@ function print_vowels_count() {
 }
 
 
-// checks if chaine is a palindrome, if you change chaine to "kayak" it returns true
+// ex 3 : checks if chaine is a palindrome, if you change chaine to "kayak" it returns true
 function isAPalindrome(str){
     return str.toLowerCase() === reverse(str).toLowerCase();
 }
