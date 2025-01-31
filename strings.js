@@ -1,4 +1,4 @@
-let chaine = "kayak";
+let chaine = "Bonjour";
 
 // printing exercise 1 :
 console.log(chaine, reverse(chaine));
@@ -7,7 +7,7 @@ console.log(chaine, reverse(chaine));
 console.log(print_vowels_count());
 
 
-// printint exercise 3 : 
+// printing exercise 3 : 
 console.log(isAPalindrome(chaine));
 
 function reverse(str) {
@@ -18,7 +18,7 @@ function reverse(str) {
     return str_inv;
 }
 
-//this function returns how ma´y vowels are in chaine 
+//this function returns how many vowels are in chaine 
 function comp_voy(str) {
     let compteur = 0;
     let voyelles = ['a', 'e', 'i', 'o', 'u', 'y'];
@@ -32,7 +32,7 @@ function comp_voy(str) {
     return compteur;
 }
 
-// this function is not part of the homework, it returns a phrase saying the result oh the previous function 
+// this function is not part of the homework, it returns a phrase saying the result of the previous function 
 function print_vowels_count() {
     let combien = comp_voy(chaine);
     let voyelle = ' voyelle';
@@ -43,7 +43,7 @@ function print_vowels_count() {
 }
 
 
-// Checks is chaine is a palindrome, if you change chaine to "kayak" it returns true
+// checks if chaine is a palindrome, if you change chaine to "kayak" it returns true
 function isAPalindrome(str){
     return str.toLowerCase() === reverse(str).toLowerCase();
 }
