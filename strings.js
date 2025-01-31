@@ -30,7 +30,6 @@ function comp_voy(str) {
             compteur += 1;
         }
     }
-    
     return compteur;
 }
 
